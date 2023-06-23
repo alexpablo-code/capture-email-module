@@ -1,0 +1,26 @@
+.page-header{
+    background: gainsboro;
+    padding: 20px;
+
+}
+
+.content-area{
+    background: rgb(105, 142, 155);
+    height: 1500px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 2rem;
+    transform: scale(.8);
+    width: 80px;
+}
+
+.logo__sub{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+}
