@@ -24,3 +24,23 @@
     font-family: 'Dancing Script', cursive;
     font-size: 1.5rem;
 }
+
+.email-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.email-modal--visible{
+    visibility: visible;
+    opacity: 1;
+}
