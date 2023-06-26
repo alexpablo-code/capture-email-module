@@ -44,3 +44,34 @@
     visibility: visible;
     opacity: 1;
 }
+
+.email-modal__close-btn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+    background-color: red;
+}
+
+.email-modal .gg-close{
+    color: white;
+}
+.gg-close{
+    --ggs:2;
+}
+
+.email-modal__container{
+    background-color: rgba(29, 103,200,1);
+    max-width: 700px;
+    width: 100%;
+    color: white;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.email-modal__info{
+    width: 100%;
+    padding: 15px;
+}
