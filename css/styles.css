@@ -29,7 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0,0,0,.7);
     display: flex;
@@ -74,4 +74,62 @@
 .email-modal__info{
     width: 100%;
     padding: 15px;
+}
+
+.email-modal__info .logo{
+    margin-bottom: 4rem;
+}
+
+.email-modal h2{
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.email-modal__message{
+    color: rgba(221, 221, 221, 0.7);
+    font-weight: 100;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+.email-modal__highlight-text{
+    color: white;
+}
+
+.email-modal__form-group{
+    background-color: white;
+    display: flex;
+    padding: 5px;
+    margin-bottom: 1.2rem;
+}
+
+.email-modal__input{
+    background-color: white;
+    border: 0px solid;
+    width: 100%;
+    height: 30px;
+}
+
+.email-modal__button{
+    background: rgba(81, 158, 71, 1);
+    color: white;
+    border: 0px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.email-modal__decline-offer{
+    color: rgba(221, 221, 221, 0.7);
+    text-decoration: underline;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: color .3s ease-in-out ;
+}
+
+.email-modal__decline-offer:hover{
+    color: white;
+}
+
+.email-modal__side-image img{
+    height: 400px;
 }
