@@ -110,12 +110,29 @@
     height: 30px;
 }
 
+.email-modal__form-group--error{
+    border: 1px solid red;
+}
+
 .email-modal__button{
     background: rgba(81, 158, 71, 1);
     color: white;
     border: 0px;
     width: 150px;
     cursor: pointer;
+}
+
+.email-modal__error-message{
+    color:  #fbe743;
+    margin-bottom: .7rem;
+    font-size: .8rem;
+    display: none;
+
+}
+
+.email-modal__error-message--active{
+    display: block;
+    
 }
 
 .email-modal__decline-offer{
