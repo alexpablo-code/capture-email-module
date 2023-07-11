@@ -16,6 +16,13 @@ window.onload = function(){
         return /\S+@\S+\.\S+/.test(email)
     }
 
+    let showModal = () => {
+        if(emailState == false){
+            emailModal.classList.add('email-modal--visible');
+            emailState = true;
+        }
+    }
+
     let closeModal = () => {
         emailModal.classList.remove('email-modal--visible');
     }
@@ -30,6 +37,10 @@ window.onload = function(){
         document.getElementsByClassName('email-modal__error-message')[0].classList.remove('email-modal__error-message--active');
     }
 
+    emailInput.addEventListener('click', () => {
+        removeErrors(); 
+    })
+
     emailButton.addEventListener('click', () => {
         if(emailIsValid(emailInput.value)){
             console.log(emailInput.value)
@@ -42,12 +53,6 @@ window.onload = function(){
         closeModal();
     });
     
-    let showModal = () => {
-        if(emailState == false){
-            emailModal.classList.add('email-modal--visible');
-            emailState = true;
-        }
-    }
 
     document.body.addEventListener('mouseleave', () => {
         showModal();
